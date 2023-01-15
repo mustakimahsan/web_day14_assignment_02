@@ -1,0 +1,231 @@
+/* google fonts Work Sans */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+/* common styles or utilities*/
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.title-text {
+  font-weight: 700;
+  color: #131313;
+}
+.info-text {
+  font-weight: 400;
+  color: #727272;
+}
+
+/* <!-- header start --> */
+
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 20px 80px 30px;
+}
+/* navigation part  */
+.nav.title-text {
+  font-size: 45px;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #424242;
+  font-size: 18px;
+}
+/* navigation part end */
+.banner-part {
+  text-align: center;
+}
+.banner-detail {
+  text-align: center;
+  margin: 5px 100px 5px;
+  padding: 5px 100px 5px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #131313;
+  margin: 0;
+  padding: 10px;
+}
+.banner.info-text, .some-fact.info-text, .our-sponsors.info-text {
+  font-size: 16px;
+}
+.btn-primary {
+  background-color: #ff900e; /*Button Color*/
+  border: none; /*Button Border*/
+  color: #ffffff; /*button text color */
+  font-size: 20px; /*Button Size*/
+  font-weight: 600;
+  border-radius: 8px; /* Rounded Button */
+  width: 180px; /*Button Width*/
+  height: 64px; /*Button height*/
+}
+.banner-img {
+  margin-top: 40px;
+  max-width: 100%;
+  height: auto;
+}
+/*<!-- header end -->  */
+
+/* <!-- Quick list of Our Features start --> */
+
+.quick,
+.features {
+  padding: 20px 80px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+.quick-thumbnail img {
+  height: 100%;
+  width: 100%;
+}
+.quick-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.quick-description.title-text,
+.features-description.title-text, 
+.some-fact.title-text,
+.our-sponsors.title-text
+{
+  font-size: 45px;
+}
+.quick-description-part {
+  display: flex;
+  flex-direction: column;
+  margin: 150px 100px 150px;
+}
+#quick-list {
+  color: #727272;
+}
+#features {
+  color: #ff900e;
+}
+/* <!-- Quick list of Our Features end --> */
+
+/* <!-- Features you will love & enjoy start --> */
+/* .quick, .features  */
+/* .quick-description.title-text, .features-description.title-text */
+.vertical {
+  border-left: 6px solid #ff900e;
+}
+.features-description-part {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+.features-thumbnail img {
+  height: 100%;
+  width: 100%;
+}
+#year {
+  font-weight: 700;
+  font-size: 65px;
+}
+#big-btn {
+  width: 342px;
+  height: 200px;
+  position: relative;
+  bottom: 80px;
+  left: 600px;
+}
+/* <!-- Features you will love & enjoy end --> */
+/* <!-- Some Facts section start --> */
+.some-fact {
+  padding: 20px 10px 30px;
+}
+.some-fact.title-text, .our-sponsors.title-text{
+  margin: 0;
+}
+.facts-container, .sponsors-container {
+  display: flex;
+  gap: 124px;
+  justify-content: center;
+}
+.fact img {
+  width: 47px;
+  height: 45px;
+}
+.fact {
+  background: #ffffff;
+  border: 2px solid #ff900e;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 50px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+.fact:hover {
+  transform: scale(1.5);
+}
+.fact-description {
+  font-weight: 600;
+  font-size: 20px;
+  color: #757575;
+}
+#fact-description-number {
+  color: #424242;
+  font-weight: 600;
+  font-size: 45px;
+}
+/* <!-- Some Facts section end --> */
+/* <!-- Our sponsors section start --> */
+.our-sponsors{
+  padding: 20px 10px 30px;
+  text-align: center;
+}
+.sponsor img{
+  width: 120px;
+  height: 50px;
+  mix-blend-mode: darken;
+}
+.sponsor:hover {
+  transform: scale(1.5);
+}
+/* <!-- Our sponsors section end --> */
+/* extra section */
+.contact {
+  display: flex;
+  gap: 100px;
+  background: #fafafa;
+  padding: 20px 80px 30px;
+}
+.contact .section-title {
+  text-align: left;
+}
+.contact input[type="text"],
+input[type="email"],
+textarea {
+  margin-bottom: 24px;
+  border: 0;
+  width: 100%;
+  padding: 18px 30px;
+}
+input {
+  height: 64px;
+}
+.contact a {
+  text-decoration: none;
+}
+/* <!-- extra section end --> */
+/* <!-- footer start --> */
+footer {
+  background-color: #fff4e7;
+  margin: 20px 80px 30px;
+  text-align: center;
+}
+.footer.info-text {
+  padding: 20px 30px;
+}
+/* <!-- footer end --> */
