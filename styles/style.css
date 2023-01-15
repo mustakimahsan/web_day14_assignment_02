@@ -54,7 +54,9 @@ ul li a {
   margin: 0;
   padding: 10px;
 }
-.banner.info-text, .some-fact.info-text, .our-sponsors.info-text {
+.banner.info-text,
+.some-fact.info-text,
+.our-sponsors.info-text {
   font-size: 16px;
 }
 .btn-primary {
@@ -93,10 +95,9 @@ ul li a {
   gap: 5px;
 }
 .quick-description.title-text,
-.features-description.title-text, 
+.features-description.title-text,
 .some-fact.title-text,
-.our-sponsors.title-text
-{
+.our-sponsors.title-text {
   font-size: 45px;
 }
 .quick-description-part {
@@ -144,10 +145,12 @@ ul li a {
 .some-fact {
   padding: 20px 10px 30px;
 }
-.some-fact.title-text, .our-sponsors.title-text{
+.some-fact.title-text,
+.our-sponsors.title-text {
   margin: 0;
 }
-.facts-container, .sponsors-container {
+.facts-container,
+.sponsors-container {
   display: flex;
   gap: 124px;
   justify-content: center;
@@ -181,11 +184,11 @@ ul li a {
 }
 /* <!-- Some Facts section end --> */
 /* <!-- Our sponsors section start --> */
-.our-sponsors{
+.our-sponsors {
   padding: 20px 10px 30px;
   text-align: center;
 }
-.sponsor img{
+.sponsor img {
   width: 120px;
   height: 50px;
   mix-blend-mode: darken;
@@ -229,3 +232,72 @@ footer {
   padding: 20px 30px;
 }
 /* <!-- footer end --> */
+/* Responsive for mobile device */
+@media only screen and (max-width: 688px) {
+  header {
+    padding: 0;
+  }
+  nav {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: right;
+  }
+  ul {
+    flex-direction: column;
+  }
+  .banner-part {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .banner-detail {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+  }
+  /* header end */
+  .quick {
+    padding: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 10px;
+  }
+  .quick-thumbnail {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .quick-description-part {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+  /* quick list end */
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
+
+  #big-btn {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+  }
+  /* <!-- Features you will love & enjoy end --> */
+  .facts-container,
+  .sponsors-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* <!-- Some Facts section end --> */
+  .contact {
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+  }
+  .footer.info-text {
+    padding: 5px 5px;
+  }
+  footer {
+    margin: 0;
+  }
+}
+
