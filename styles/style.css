@@ -288,16 +288,23 @@ footer {
     gap: 20px;
   }
   /* <!-- Some Facts section end --> */
-  .contact {
+  .contact{
     flex-direction: column;
     gap: 20px;
-    padding: 5px;
+    padding: 10px 20px;
+  }
+  .footer{
+    width: 100%;
   }
   .footer.info-text {
     padding: 5px 5px;
   }
   footer {
     margin: 0;
+  }
+  .contact input[type="text"], input[type="email"], textarea {
+    padding: 0 0 0 5px;
+    width: calc(100% - 20%);
   }
 }
 
